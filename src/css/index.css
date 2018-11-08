@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #5cdb95;
+    font-family: sans-serif;
+}
+
+#map {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    min-width: 78vw;
+    max-width: 78vw;
+    float: right;
+}
+
+.search {  
+    max-width: 20vw;
+    min-width: 20vw;
+    float: left;
+    text-align: center;
+}
+
+.searchHeader {
+    max-height: 15vh;
+}
+
+#searchField {
+    width: 150px;
+    padding: 5px;
+}
+
+.dataList {
+    background: #5cdb95;
+    overflow-y: auto;
+    padding: 0px;
+    margin: 0;
+    max-height: 80vh;
+    min-width: 22vw;
+    max-width: 22vw;
+    font-size: 0.9em;
+}
+
+.dataListItem {
+	list-style: none;
+	cursor: pointer;
+	text-align: left;
+    padding: 5px 5px 5px 15px;
+    max-width: 18vw;
+    min-width: 18vw;
+    word-break: break-word;
+}
+
+.dataListItem:hover {
+    background-color: #05386b;
+    border-radius: 5px;
+    color: #edf5e1;
+}
+
+.dataListItem > p {
+    font-size: 0.8em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    max-width: 18vw;
+    word-break: break-word;
+}
+
+.infoPopup {
+    font-family: sans-serif;
+}
+
+.infoPopup > h3, .infoAddress {
+    margin-block-start: 0.33em;
+    margin-block-end: 0.33em;
+    color: #05386b;
+}
+
+.errorSpan {
+    color: red;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 680px) and (max-width:899px) {
+    #map {
+        min-width: 75vw;
+        max-width: 75vw;
+    }
+    .dataList {
+        max-height: 83vh;
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+    #searchField {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:679px) {
+    #map {
+        min-width: 72.7vw;
+        max-width: 73vw;
+    }
+
+    .search {  
+        max-width: 24vw;
+        min-width: 24vw;
+    }
+
+    .dataList {
+        max-height: 83vh;
+        min-width: 24vw;
+        max-width: 24vw;
+    }
+    
+    #searchField {
+        width: 75px;
+    }
+}
