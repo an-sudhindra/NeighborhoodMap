@@ -153,7 +153,7 @@ class App extends Component {
 		return (
 			<div>
 				<ListPane key="100" allLocations={this.state.allLocations} openInfoWindow={this.openInfoWindow} closeInfoWindow={this.closeInfoWindow} />
-				<div id="map"></div>
+				<div id="map" role="application"></div>
 			</div>
 		);
 	}

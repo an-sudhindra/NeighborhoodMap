@@ -46,7 +46,7 @@ export default class ListPane extends Component {
         }, this);
 
         return (
-            <div className="search">
+            <aside className="search">
                 <div align="center" className="searchHeader">
                     <h2>Nearby Places</h2>
                     <input role="search" aria-label="filter" id="searchField" type="text" value={this.state.query} onChange={this.filterLocations}/>
@@ -55,7 +55,7 @@ export default class ListPane extends Component {
                 <ul className="dataList">
                     { locationsList }
                 </ul>
-            </div>
+            </aside>
         );
     }
 }
